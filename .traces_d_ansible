@@ -1,0 +1,1025 @@
+2025-02-11 20:12:34,857 p=65368 u=deploy n=ansible WARNING| [WARNING]: Unable to parse /home/deploy/codes/ansible/hosts as an inventory
+source
+
+2025-02-11 20:12:34,858 p=65368 u=deploy n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-02-11 20:12:38,239 p=65368 u=deploy n=ansible INFO| localhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "192.168.54.128"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::f96a:1cce:152d:2b9b"
+        ],
+        "ansible_apparmor": {
+            "status": "enabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "11/12/2020",
+        "ansible_bios_vendor": "Phoenix Technologies LTD",
+        "ansible_bios_version": "6.00",
+        "ansible_board_asset_tag": "NA",
+        "ansible_board_name": "440BX Desktop Reference Platform",
+        "ansible_board_serial": "NA",
+        "ansible_board_vendor": "Intel Corporation",
+        "ansible_board_version": "None",
+        "ansible_chassis_asset_tag": "No Asset Tag",
+        "ansible_chassis_serial": "NA",
+        "ansible_chassis_vendor": "No Enclosure",
+        "ansible_chassis_version": "N/A",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-6.11.2-amd64",
+            "quiet": true,
+            "ro": true,
+            "root": "UUID=ea6fa5da-2be4-4b01-919a-af04cf86901a",
+            "splash": true
+        },
+        "ansible_date_time": {
+            "date": "2025-02-11",
+            "day": "11",
+            "epoch": "1739322756",
+            "epoch_int": "1739322756",
+            "hour": "20",
+            "iso8601": "2025-02-12T01:12:36Z",
+            "iso8601_basic": "20250211T201236744479",
+            "iso8601_basic_short": "20250211T201236",
+            "iso8601_micro": "2025-02-12T01:12:36.744479Z",
+            "minute": "12",
+            "month": "02",
+            "second": "36",
+            "time": "20:12:36",
+            "tz": "EST",
+            "tz_dst": "EDT",
+            "tz_offset": "-0500",
+            "weekday": "Tuesday",
+            "weekday_number": "2",
+            "weeknumber": "06",
+            "year": "2025"
+        },
+        "ansible_default_ipv4": {
+            "address": "192.168.54.128",
+            "alias": "eth0",
+            "broadcast": "192.168.54.255",
+            "gateway": "192.168.54.2",
+            "interface": "eth0",
+            "macaddress": "00:0c:29:4c:7e:0c",
+            "mtu": 1500,
+            "netmask": "255.255.255.0",
+            "network": "192.168.54.0",
+            "prefix": "24",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {},
+            "labels": {
+                "sda1": [
+                    "root"
+                ]
+            },
+            "masters": {},
+            "uuids": {
+                "sda1": [
+                    "ea6fa5da-2be4-4b01-919a-af04cf86901a"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "sda": {
+                "holders": [],
+                "host": "SCSI storage controller: Broadcom / LSI 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "VMware Virtual S",
+                "partitions": {
+                    "sda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [
+                                "root"
+                            ],
+                            "masters": [],
+                            "uuids": [
+                                "ea6fa5da-2be4-4b01-919a-af04cf86901a"
+                            ]
+                        },
+                        "sectors": 167966702,
+                        "sectorsize": 512,
+                        "size": "80.09 GB",
+                        "start": "2048",
+                        "uuid": "ea6fa5da-2be4-4b01-919a-af04cf86901a"
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": 167968750,
+                "sectorsize": "512",
+                "size": "80.09 GB",
+                "support_discard": "0",
+                "vendor": "VMware,",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "Kali",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/os-release",
+        "ansible_distribution_file_variety": "Debian",
+        "ansible_distribution_major_version": "2024",
+        "ansible_distribution_release": "kali-rolling",
+        "ansible_distribution_version": "2024.4",
+        "ansible_dns": {
+            "nameservers": [
+                "192.168.54.2"
+            ],
+            "search": [
+                "localdomain"
+            ]
+        },
+        "ansible_domain": "",
+        "ansible_effective_group_id": 1001,
+        "ansible_effective_user_id": 1001,
+        "ansible_env": {
+            "COLORFGBG": "0;15",
+            "COLORTERM": "truecolor",
+            "COMMAND_NOT_FOUND_INSTALL_PROMPT": "1",
+            "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1001/bus",
+            "DESKTOP_SESSION": "lightdm-xsession",
+            "DISPLAY": ":1.0",
+            "DOTNET_CLI_TELEMETRY_OPTOUT": "1",
+            "GDMSESSION": "lightdm-xsession",
+            "HOME": "/home/deploy",
+            "LANG": "en_US.UTF-8",
+            "LANGUAGE": "",
+            "LESS_TERMCAP_mb": "\u001b[1;31m",
+            "LESS_TERMCAP_md": "\u001b[1;36m",
+            "LESS_TERMCAP_me": "\u001b[0m",
+            "LESS_TERMCAP_se": "\u001b[0m",
+            "LESS_TERMCAP_so": "\u001b[01;33m",
+            "LESS_TERMCAP_ue": "\u001b[0m",
+            "LESS_TERMCAP_us": "\u001b[1;32m",
+            "LOGNAME": "deploy",
+            "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::ow=30;44:",
+            "NMAP_PRIVILEGED": "",
+            "OLDPWD": "/home/deploy",
+            "PANEL_GDK_CORE_DEVICE_EVENTS": "0",
+            "PATH": "/home/deploy/.local/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/deploy/.dotnet/tools",
+            "POWERSHELL_TELEMETRY_OPTOUT": "1",
+            "POWERSHELL_UPDATECHECK": "Off",
+            "PWD": "/home/deploy/codes/ansible",
+            "QT_ACCESSIBILITY": "1",
+            "QT_AUTO_SCREEN_SCALE_FACTOR": "0",
+            "QT_QPA_PLATFORMTHEME": "qt5ct",
+            "SESSION_MANAGER": "local/kali:@/tmp/.ICE-unix/25771,unix/kali:/tmp/.ICE-unix/25771",
+            "SHELL": "/bin/bash",
+            "SHLVL": "1",
+            "SSH_AGENT_PID": "25871",
+            "SSH_AUTH_SOCK": "/tmp/ssh-YVyL3QMd8hai/agent.25870",
+            "TERM": "xterm-256color",
+            "USER": "deploy",
+            "WINDOWID": "0",
+            "XAUTHORITY": "/home/deploy/.Xauthority",
+            "XDG_CACHE_HOME": "/home/deploy/.cache",
+            "XDG_CONFIG_DIRS": "/etc/xdg",
+            "XDG_CONFIG_HOME": "/home/deploy/.config",
+            "XDG_CURRENT_DESKTOP": "XFCE",
+            "XDG_DATA_DIRS": "/usr/share/xfce4:/usr/local/share/:/usr/share/:/usr/share",
+            "XDG_GREETER_DATA_DIR": "/var/lib/lightdm/data/deploy",
+            "XDG_MENU_PREFIX": "xfce-",
+            "XDG_RUNTIME_DIR": "/run/user/1001",
+            "XDG_SEAT": "seat0",
+            "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+            "XDG_SESSION_CLASS": "user",
+            "XDG_SESSION_DESKTOP": "lightdm-xsession",
+            "XDG_SESSION_ID": "8",
+            "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session1",
+            "XDG_SESSION_TYPE": "x11",
+            "XDG_VTNR": "8",
+            "_": "/usr/bin/ansible",
+            "_JAVA_OPTIONS": "-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
+        },
+        "ansible_eth0": {
+            "active": true,
+            "device": "eth0",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "off [fixed]",
+                "hsr_dup_offload": "off [fixed]",
+                "hsr_fwd_offload": "off [fixed]",
+                "hsr_tag_ins_offload": "off [fixed]",
+                "hsr_tag_rm_offload": "off [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "off [fixed]",
+                "macsec_hw_offload": "off [fixed]",
+                "netns_local": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off",
+                "rx_checksumming": "off",
+                "rx_fcs": "off",
+                "rx_gro_hw": "off [fixed]",
+                "rx_gro_list": "off",
+                "rx_udp_gro_forwarding": "off",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "on [fixed]",
+                "rx_vlan_offload": "on",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_rx_offload": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_list": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "off [fixed]",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "off [fixed]",
+                "tx_sctp_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "off [fixed]",
+                "tx_tcp_ecn_segmentation": "off [fixed]",
+                "tx_tcp_mangleid_segmentation": "off",
+                "tx_tcp_segmentation": "on",
+                "tx_tunnel_remcsum_segmentation": "off [fixed]",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "on [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "192.168.54.128",
+                "broadcast": "192.168.54.255",
+                "netmask": "255.255.255.0",
+                "network": "192.168.54.0",
+                "prefix": "24"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::f96a:1cce:152d:2b9b",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "00:0c:29:4c:7e:0c",
+            "module": "e1000",
+            "mtu": 1500,
+            "pciid": "0000:02:01.0",
+            "promisc": false,
+            "speed": 1000,
+            "timestamping": [],
+            "type": "ether"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_flags": [
+            "fpu",
+            "vme",
+            "de",
+            "pse",
+            "tsc",
+            "msr",
+            "pae",
+            "mce",
+            "cx8",
+            "apic",
+            "sep",
+            "mtrr",
+            "pge",
+            "mca",
+            "cmov",
+            "pat",
+            "pse36",
+            "clflush",
+            "mmx",
+            "fxsr",
+            "sse",
+            "sse2",
+            "ht",
+            "syscall",
+            "nx",
+            "mmxext",
+            "rdtscp",
+            "lm",
+            "constant_tsc",
+            "rep_good",
+            "nopl",
+            "tsc_reliable",
+            "nonstop_tsc",
+            "cpuid",
+            "extd_apicid",
+            "tsc_known_freq",
+            "pni",
+            "pclmulqdq",
+            "ssse3",
+            "fma",
+            "cx16",
+            "sse4_1",
+            "sse4_2",
+            "movbe",
+            "popcnt",
+            "aes",
+            "xsave",
+            "avx",
+            "hypervisor",
+            "lahf_lm",
+            "abm",
+            "sse4a",
+            "misalignsse",
+            "3dnowprefetch",
+            "osvw",
+            "ssbd",
+            "vmmcall",
+            "arat",
+            "overflow_recov",
+            "succor"
+        ],
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "kali",
+        "ansible_hostname": "kali",
+        "ansible_hostnqn": "",
+        "ansible_interfaces": [
+            "eth0",
+            "lo"
+        ],
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "6.11.2-amd64",
+        "ansible_kernel_version": "#1 SMP PREEMPT_DYNAMIC Kali 6.11.2-1kali1 (2024-10-15)",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "fcoe_mtu": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hsr_dup_offload": "off [fixed]",
+                "hsr_fwd_offload": "off [fixed]",
+                "hsr_tag_ins_offload": "off [fixed]",
+                "hsr_tag_rm_offload": "off [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "on [fixed]",
+                "macsec_hw_offload": "off [fixed]",
+                "netns_local": "on [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_gro_list": "off",
+                "rx_udp_gro_forwarding": "off",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_rx_offload": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on [fixed]",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_list": "on",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_lockless": "on [fixed]",
+                "tx_nocache_copy": "off [fixed]",
+                "tx_scatter_gather": "on [fixed]",
+                "tx_scatter_gather_fraglist": "on [fixed]",
+                "tx_sctp_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_tunnel_remcsum_segmentation": "off [fixed]",
+                "tx_udp_segmentation": "on",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "vlan_challenged": "on [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0",
+                "prefix": "8"
+            },
+            "ipv6": [
+                {
+                    "address": "::1",
+                    "prefix": "128",
+                    "scope": "host"
+                }
+            ],
+            "mtu": 65536,
+            "promisc": false,
+            "timestamping": [],
+            "type": "loopback"
+        },
+        "ansible_loadavg": {
+            "15m": 0.203125,
+            "1m": 0.12744140625,
+            "5m": 0.16552734375
+        },
+        "ansible_local": {},
+        "ansible_locally_reachable_ips": {
+            "ipv4": [
+                "127.0.0.0/8",
+                "127.0.0.1",
+                "192.168.54.128"
+            ],
+            "ipv6": [
+                "::1",
+                "fe80::f96a:1cce:152d:2b9b"
+            ]
+        },
+        "ansible_lsb": {
+            "codename": "kali-rolling",
+            "description": "Kali GNU/Linux Rolling",
+            "id": "Kali",
+            "major_release": "2024",
+            "release": "2024.4"
+        },
+        "ansible_lvm": "N/A",
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "55e5305955694ed3b6c7506b1268fad8",
+        "ansible_memfree_mb": 79,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 882,
+                "used": 1082
+            },
+            "real": {
+                "free": 79,
+                "total": 1964,
+                "used": 1885
+            },
+            "swap": {
+                "cached": 6,
+                "free": 294,
+                "total": 1023,
+                "used": 729
+            }
+        },
+        "ansible_memtotal_mb": 1964,
+        "ansible_mounts": [
+            {
+                "block_available": 15043304,
+                "block_size": 4096,
+                "block_total": 20520787,
+                "block_used": 5477483,
+                "device": "/dev/sda1",
+                "dump": 0,
+                "fstype": "ext4",
+                "inode_available": 4740916,
+                "inode_total": 5251072,
+                "inode_used": 510156,
+                "mount": "/",
+                "options": "rw,relatime,errors=remount-ro",
+                "passno": 0,
+                "size_available": 61617373184,
+                "size_total": 84053143552,
+                "uuid": "ea6fa5da-2be4-4b01-919a-af04cf86901a"
+            }
+        ],
+        "ansible_nodename": "kali",
+        "ansible_os_family": "Debian",
+        "ansible_pkg_mgr": "apt",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-6.11.2-amd64",
+            "quiet": true,
+            "ro": true,
+            "root": "UUID=ea6fa5da-2be4-4b01-919a-af04cf86901a",
+            "splash": true
+        },
+        "ansible_processor": [
+            "0",
+            "AuthenticAMD",
+            "AMD Ryzen 7 2700 Eight-Core Processor",
+            "1",
+            "AuthenticAMD",
+            "AMD Ryzen 7 2700 Eight-Core Processor",
+            "2",
+            "AuthenticAMD",
+            "AMD Ryzen 7 2700 Eight-Core Processor",
+            "3",
+            "AuthenticAMD",
+            "AMD Ryzen 7 2700 Eight-Core Processor"
+        ],
+        "ansible_processor_cores": 2,
+        "ansible_processor_count": 2,
+        "ansible_processor_nproc": 4,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 4,
+        "ansible_product_name": "VMware Virtual Platform",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "NA",
+        "ansible_product_version": "None",
+        "ansible_python": {
+            "executable": "/usr/bin/python3",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 9,
+                "minor": 12,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                12,
+                9,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.12.9",
+        "ansible_real_group_id": 1001,
+        "ansible_real_user_id": 1001,
+        "ansible_selinux": {
+            "status": "disabled"
+        },
+        "ansible_selinux_python_present": true,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMqKfeOrCBDiPIWMT7lHAuGreeCEZpsoTHV3zq+ImByDyW5EZDKbxcV+tuNxeGvWiUJwpR2aL+M/egyqevK4Wiw=",
+        "ansible_ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIKreO7J53hVp8XC9GAnVN0wEW+l8y5KckCRPVXMM5/xP",
+        "ansible_ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQDow2e6+Gy/KTwCOWmYfGrDdzXS09CKSJh4UNwaLcgQF/ZR4ncx9HIBuU9/VomqvNPj76BKyhnqyrOlRaGAGPq5i6Z6JsIYyZ5mrBCWehjXOBRuTNYGCTa0WfexjkUtyBLu62aFKP7dH7SxPdebDkjuY+a3CawUNwSwMDunJBPxeOd8fTtlaLyu1J5BUVUWjDYUKtuoME2AiB7VCQaaZHxCP/Dehuga8+GA4+TkkgCg0rQnnMtr8bxyEBpttYA7URwrGlHT85rzOP0epq4knrYbJDVWdsxmhJIwhwAsTNRmdpkiRnO2E3S7Hyj7vzsGe84vSxcXKVwOIBUySj+GdZoNi+WM13/QT685QzuTsxjYAaOBsTFfzF1JHxYN+WWLHtQZTrONUqro9/dybgu2GrX9Rz1Vkq3Sh4gPiQz+wzPdHswAKMewvYB2Kuhf0xbOekCgSinpWEEiGztTUsZEQJo7iDJDgl+G3ib4f7eDWGwMgMOdcHryzds7GjSTJ0bdv/k=",
+        "ansible_ssh_host_key_rsa_public_keytype": "ssh-rsa",
+        "ansible_swapfree_mb": 294,
+        "ansible_swaptotal_mb": 1023,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            "i"
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "VMware, Inc.",
+        "ansible_systemd": {
+            "features": "+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE",
+            "version": 257
+        },
+        "ansible_uptime_seconds": 3708,
+        "ansible_user_dir": "/home/deploy",
+        "ansible_user_gecos": ",,,",
+        "ansible_user_gid": 1001,
+        "ansible_user_id": "deploy",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 1001,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_tech_guest": [
+            "VMware"
+        ],
+        "ansible_virtualization_tech_host": [],
+        "ansible_virtualization_type": "VMware",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+2025-02-11 20:17:39,791 p=69960 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '192.168.54.131' (ED25519) to the list of known hosts.\r\ndeploy@192.168.54.131: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:20:26,410 p=73072 u=deploy n=ansible INFO| localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused",
+    "unreachable": true
+}
+2025-02-11 20:20:36,410 p=73072 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.54.131 port 22: Connection timed out",
+    "unreachable": true
+}
+2025-02-11 20:20:49,029 p=73448 u=deploy n=ansible INFO| localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused",
+    "unreachable": true
+}
+2025-02-11 20:20:49,146 p=73448 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.131: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:21:18,157 p=73926 u=deploy n=ansible INFO|   hosts (2):
+2025-02-11 20:21:18,157 p=73926 u=deploy n=ansible INFO|     srv-web-01
+2025-02-11 20:21:18,157 p=73926 u=deploy n=ansible INFO|     localhost
+2025-02-11 20:21:32,336 p=74154 u=deploy n=ansible INFO|   hosts (2):
+2025-02-11 20:21:32,336 p=74154 u=deploy n=ansible INFO|     srv-web-01
+2025-02-11 20:21:32,336 p=74154 u=deploy n=ansible INFO|     localhost
+2025-02-11 20:22:01,984 p=74643 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.131: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:23:35,547 p=76154 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.131: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:24:21,227 p=76902 u=deploy n=ansible INFO| localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused",
+    "unreachable": true
+}
+2025-02-11 20:24:21,342 p=76902 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.131: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:30:24,915 p=82798 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.131: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:41:47,467 p=93803 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '192.168.54.137' (ED25519) to the list of known hosts.\r\ndeploy@192.168.54.137: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:42:50,571 p=94907 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.137: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:45:24,621 p=97389 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.137: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:50:12,510 p=102050 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.137: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:51:12,037 p=103023 u=deploy n=ansible INFO| localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused",
+    "unreachable": true
+}
+2025-02-11 20:51:12,158 p=103023 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.137: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:53:29,058 p=105226 u=deploy n=ansible INFO| localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused",
+    "unreachable": true
+}
+2025-02-11 20:53:29,171 p=105226 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.137: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:55:24,316 p=107112 u=root n=ansible INFO| localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused",
+    "unreachable": true
+}
+2025-02-11 20:55:29,698 p=107112 u=root n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '192.168.54.137' (ED25519) to the list of known hosts.\r\ndeploy@192.168.54.137: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:55:31,796 p=107236 u=root n=ansible INFO| localhost | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host localhost port 22: Connection refused",
+    "unreachable": true
+}
+2025-02-11 20:55:31,909 p=107236 u=root n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.137: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 20:55:42,333 p=107406 u=root n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.137: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 21:00:44,639 p=112583 u=root n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.137: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 21:03:20,490 p=115130 u=root n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.137: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-11 21:42:33,263 p=153239 u=root n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.137: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-13 19:54:37,952 p=2820061 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.132: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-13 19:54:38,085 p=2820061 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host control is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 19:54:38,085 p=2820061 u=deploy n=ansible INFO| control | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.12"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2025-02-13 20:01:34,417 p=2823550 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.132: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-13 20:01:34,706 p=2823550 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host control is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 20:01:34,706 p=2823550 u=deploy n=ansible INFO| control | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.12"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2025-02-13 20:03:40,196 p=2824668 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.132: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-13 20:03:40,486 p=2824668 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host control is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 20:03:40,486 p=2824668 u=deploy n=ansible INFO| control | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.12"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2025-02-13 20:05:17,763 p=2825515 u=deploy n=ansible WARNING| [WARNING]: errors were encountered during the plugin load for 127.0.0.1:
+['invalid collection name (must be of the form namespace.collection): 127.0']
+
+2025-02-13 20:05:17,766 p=2825515 u=deploy n=ansible INFO| control | FAILED! => {
+    "msg": "the connection plugin '127.0.0.1' was not found"
+}
+2025-02-13 20:05:17,939 p=2825515 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added '192.168.54.138' (ED25519) to the list of known hosts.\r\ndeploy@192.168.54.138: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-13 20:05:44,788 p=2825732 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.138: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-13 20:05:45,059 p=2825732 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host control is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 20:05:45,059 p=2825732 u=deploy n=ansible INFO| control | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.12"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2025-02-13 20:12:49,460 p=2829302 u=deploy n=ansible INFO| srv-web-01 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: deploy@192.168.54.138: Permission denied (publickey,password).",
+    "unreachable": true
+}
+2025-02-13 20:12:49,734 p=2829302 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host control is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 20:12:49,734 p=2829302 u=deploy n=ansible INFO| control | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.12"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2025-02-13 20:26:41,194 p=2836228 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host control is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 20:26:41,196 p=2836228 u=deploy n=ansible INFO| control | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.12"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2025-02-13 20:26:42,114 p=2836228 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host srv-web-01 is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 20:26:42,114 p=2836228 u=deploy n=ansible INFO| srv-web-01 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.12"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2025-02-13 20:57:06,295 p=2851364 u=deploy n=ansible ERROR| ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  could not find expected ':'. while scanning a simple key
+  in "<unicode string>", line 8, column 5
+could not find expected ':'
+  in "<unicode string>", line 9, column 1
+
+The error appears to be in '/home/deploy/codes/ansible/deploy.yaml': line 9, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    image: httpd
+    ports:"80:80"
+^ here
+This one looks easy to fix. It seems that there is a value started
+with a quote, and the YAML parser is expecting to see the line ended
+with the same kind of quote. For instance:
+
+    when: "ok" in result.stdout
+
+Could be written as:
+
+   when: '"ok" in result.stdout'
+
+Or equivalently:
+
+   when: "'ok' in result.stdout"
+
+2025-02-13 20:58:46,807 p=2852226 u=deploy n=ansible ERROR| ERROR! A playbook must be a list of plays, got a <class 'ansible.parsing.yaml.objects.AnsibleMapping'> instead: /home/deploy/codes/ansible/deploy.yaml
+
+The error appears to be in '/home/deploy/codes/ansible/deploy.yaml': line 1, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+name: "Apache installation avec Docker"
+^ here
+
+2025-02-13 20:59:26,183 p=2852547 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *****************************************
+2025-02-13 20:59:26,240 p=2852547 u=deploy n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-02-13 20:59:29,809 p=2852547 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host srv-web-01 is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 20:59:29,809 p=2852547 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 20:59:29,819 p=2852547 u=deploy n=ansible INFO| TASK [CREATE APACHE CONTAINER] *************************************************
+2025-02-13 20:59:31,497 p=2852547 u=deploy n=ansible INFO| fatal: [srv-web-01]: FAILED! => {"changed": false, "msg": "Error connecting: Error while fetching server API version: ('Connection aborted.', PermissionError(13, 'Permission denied'))"}
+2025-02-13 20:59:31,499 p=2852547 u=deploy n=ansible INFO| PLAY RECAP *********************************************************************
+2025-02-13 20:59:31,499 p=2852547 u=deploy n=ansible INFO| srv-web-01                 : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-02-13 21:02:28,496 p=2854056 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *****************************************
+2025-02-13 21:02:28,510 p=2854056 u=deploy n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-02-13 21:02:30,845 p=2854056 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host srv-web-01 is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 21:02:30,845 p=2854056 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 21:02:30,853 p=2854056 u=deploy n=ansible INFO| TASK [INSTALL DOCKER] **********************************************************
+2025-02-13 21:03:32,281 p=2854056 u=deploy n=ansible INFO| fatal: [srv-web-01]: FAILED! => {"changed": false, "msg": "Failed to lock apt for exclusive operation: Failed to lock directory /var/lib/apt/lists/: E:Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)"}
+2025-02-13 21:03:32,282 p=2854056 u=deploy n=ansible INFO| PLAY RECAP *********************************************************************
+2025-02-13 21:03:32,283 p=2854056 u=deploy n=ansible INFO| srv-web-01                 : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-02-13 21:04:50,128 p=2855246 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *****************************************
+2025-02-13 21:04:50,137 p=2855246 u=deploy n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-02-13 21:04:53,394 p=2855246 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host srv-web-01 is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 21:04:53,394 p=2855246 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 21:04:53,402 p=2855246 u=deploy n=ansible INFO| TASK [INSTALL DOCKER] **********************************************************
+2025-02-13 21:05:13,814 p=2855246 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 21:05:13,823 p=2855246 u=deploy n=ansible INFO| TASK [CREATE APACHE CONTAINER] *************************************************
+2025-02-13 21:05:39,032 p=2855246 u=deploy n=ansible INFO| changed: [srv-web-01]
+2025-02-13 21:05:39,035 p=2855246 u=deploy n=ansible INFO| PLAY RECAP *********************************************************************
+2025-02-13 21:05:39,035 p=2855246 u=deploy n=ansible INFO| srv-web-01                 : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-02-13 21:17:13,595 p=2861591 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *****************************************
+2025-02-13 21:17:13,603 p=2861591 u=deploy n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-02-13 21:17:17,934 p=2861591 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host srv-web-01 is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 21:17:17,935 p=2861591 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 21:17:17,943 p=2861591 u=deploy n=ansible INFO| TASK [INSTALL DOCKER] **********************************************************
+2025-02-13 21:17:22,034 p=2861591 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 21:17:22,046 p=2861591 u=deploy n=ansible INFO| TASK [CREATE APACHE CONTAINER] *************************************************
+2025-02-13 21:17:23,266 p=2861591 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 21:17:23,267 p=2861591 u=deploy n=ansible INFO| PLAY RECAP *********************************************************************
+2025-02-13 21:17:23,268 p=2861591 u=deploy n=ansible INFO| srv-web-01                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-02-13 21:21:33,251 p=2863724 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *****************************************
+2025-02-13 21:21:33,259 p=2863724 u=deploy n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-02-13 21:21:35,764 p=2863724 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host srv-web-01 is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 21:21:35,764 p=2863724 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 21:21:35,775 p=2863724 u=deploy n=ansible INFO| TASK [INSTALL DOCKER] **********************************************************
+2025-02-13 21:21:39,615 p=2863724 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 21:21:39,623 p=2863724 u=deploy n=ansible INFO| TASK [CREATE APACHE CONTAINER] *************************************************
+2025-02-13 21:21:40,840 p=2863724 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 21:21:40,842 p=2863724 u=deploy n=ansible INFO| PLAY RECAP *********************************************************************
+2025-02-13 21:21:40,842 p=2863724 u=deploy n=ansible INFO| srv-web-01                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-02-13 21:37:06,390 p=2871406 u=deploy n=ansible ERROR| ERROR! Attempting to decrypt but no vault secrets found
+2025-02-13 21:37:23,675 p=2871637 u=deploy n=ansible INFO| PLAY [Apache installation avec Docker] *****************************************
+2025-02-13 21:37:23,684 p=2871637 u=deploy n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-02-13 21:37:26,001 p=2871637 u=deploy n=ansible WARNING| [WARNING]: Platform linux on host srv-web-01 is using the discovered Python
+interpreter at /usr/bin/python3.12, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.18/reference_appendices/interpreter_discovery.html for more information.
+
+2025-02-13 21:37:26,002 p=2871637 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 21:37:26,010 p=2871637 u=deploy n=ansible INFO| TASK [INSTALL DOCKER] **********************************************************
+2025-02-13 21:37:29,610 p=2871637 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 21:37:29,619 p=2871637 u=deploy n=ansible INFO| TASK [CREATE APACHE CONTAINER] *************************************************
+2025-02-13 21:37:30,837 p=2871637 u=deploy n=ansible INFO| ok: [srv-web-01]
+2025-02-13 21:37:30,838 p=2871637 u=deploy n=ansible INFO| PLAY RECAP *********************************************************************
+2025-02-13 21:37:30,838 p=2871637 u=deploy n=ansible INFO| srv-web-01                 : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

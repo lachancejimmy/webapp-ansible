@@ -1,0 +1,5 @@
+[Web]
+srv-web-01 ansible_host=192.168.54.138
+
+[local]
+127.0.0.1
